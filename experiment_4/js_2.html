@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>随机点名</title>
+
+</head>
+
+<body>
+<script>
+var classmates;
+classmates = new Array("阿米娜","陈雯霞","程丽如","李春珊","章博昕","其曼姑","汪丽梦","曾佳琪","初蕾","徐文君","陈思源","白泽浩","阿卜杜外力","李煜","李佳川","何迪","龚成凯","付伟斌","买买提江","龙翔","王屹昆","林佳宏","吕良","肖剑","向熠","羡子懿","徐硕","刘海龙","刘泽龙","徐赞","杨一凡","张昊钰","祖力亚尔");
+
+   function name(classmates)
+   {   var i;
+	   i=Math.floor(classmates.length*Math.random());
+	   return classmates[i];	 
+}
+   function timedCount(){
+	   document.getElementById("txt").value=name(classmates);
+}
+
+</script> 
+<form>
+<input type="text" id="txt"/>
+<input type="button" value="开始点名" onClick="timedCount()"/>
+</form>
+<p>单击按钮,随机生成一位同学的姓名。</p>
+</body>
+</html>
