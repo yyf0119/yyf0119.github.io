@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>鼠标事件</title> 
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+
+$(document).ready(function(){
+  $("#p1").mouseleave(function(){
+    $("h6").append('<br>您的鼠标离开了 id="p1" 该段落。</br>');
+  });
+});
+$(document).ready(function(){
+  $("#p2").mouseenter(function(){
+     $("h6").append('<br>您的鼠标移到了 id="p2" 的元素上!</br>');
+  });
+});
+
+</script>
+</head>
+<body>
+
+<p id="p1">鼠标离开此处，会生成一行文字</p>
+<p id="p2">鼠标指针进入此处，会生成一行文字。</p>
+<h6> </h6>
+</body>
+</html>
