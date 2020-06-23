@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+<link href="css/button.css" rel="stylesheet" type="text/css" />	
+<link href="css/core.css" rel="stylesheet" type="text/css" />			
+		<title>中国民族分布导航</title>
+<script src="js/jquery.min.js"></script>		
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jsMap-3.1.0.min.js"></script>
+<script src="js/core.js"></script>    
+
+<base target=”_blank”>
+	</head>
+	<body>
+     <br>
+     <h1 align="center">中国民族分布导航</h1> 
+     <br>
+<div style= "position: absolute; left: 87px; width: 650px; height: 331px; float: left; top: 86px;">
+    <a href="蒙古族.html"><button id="t1" class="button"><span>蒙古族</span></button></a> 
+    <a href="回族.html"><button id="t2" class="button"><span>回族</span></button></a> 
+    <a href="藏族.html"><button id="t3" class="button"><span>藏族</span></button></a> 
+    <a href="维吾尔族.html"><button id="t4" class="button"><span>维吾尔族</span></button></a> 
+    <a href="苗族.html"><button id="t5" class="button"><span>苗族</span></button></a> 
+
+    <a href="彝族.html"><button id="t6" class="button"><span>彝族</span></button></a> 
+    <a href="壮族.html"><button id="t7" class="button"><span>壮族</span></button></a> 
+    <a href="布依族.html"><button id="t8" class="button"><span>布依族</span></button></a> 
+    <a href="朝鲜族.html"><button id="t9" class="button"><span>朝鲜族</span></button></a> 
+    <a href="满族.html"><button id="t10" class="button"><span>满族</span></button></a> 
+
+    <a href="侗族.html"><button id="t11" class="button"><span>侗族</span></button></a> 
+    <a href="瑶族.html"><button id="t12" class="button"><span>瑶族</span></button></a> 
+    <a href="白族.html"><button id="t13" class="button"><span>白族</span></button></a> 
+    <a href="土家族.html"><button id="t14" class="button"><span>土家族</span></button></a> 
+    <a href="哈尼族.html"><button id="t15" class="button"><span>哈尼族</span></button></a> 
+    
+    <a href="哈萨克族.html"><button id="t16" class="button"><span>哈萨克族</span></button></a> 
+    <a href="傣族.html"><button id="t17" class="button"><span>傣族</span></button></a> 
+    <a href="黎族.html"><button id="t18" class="button"><span>黎族</span></button></a> 
+    <a href="傈僳族.html"><button id="t19" class="button"><span>僳僳族</span></button></a> 
+    <a href="佤族.html"><button id="t20" class="button"><span>佤族</span></button></a> 
+  
+    <a href="畲族.html"><button id="t21" class="button"><span>畲族</span></button></a> 
+    <a href="高山族.html"><button id="t22" class="button"><span>高山族</span></button></a> 
+    <a href="拉祜族.html"><button id="t23" class="button"><span>拉祜族</span></button></a> 
+    <a href="水族.html"><button id="t24" class="button"><span>水族</span></button></a> 
+    <a href="东乡族.html"><button id="t25" class="button"><span>东乡族</span></button></a> 
+
+    <a href="纳西族.html"><button id="t26" class="button"><span>纳西族</span></button></a> 
+    <a href="景颇族.html"><button id="t27" class="button"><span>景颇族</span></button></a> 
+    <a href="柯尔克孜族.html"><button id="t28" class="button"><span>柯尔克孜族</span></button></a> 
+    <a href="土族.html"><button id="t29" class="button"><span>土族</span></button></a> 
+    <a href="达斡尔族.html"><button id="t30" class="button"><span>达斡尔族</span></button></a> 
+
+    <a href="仫佬族.html"><button id="t31" class="button"><span>仫佬族</span></button></a> 
+    <a href="羌族.html"><button id="t32" class="button"><span>羌族</span></button></a> 
+    <a href="布朗族.html"><button id="t33" class="button"><span>布朗族</span></button></a> 
+    <a href="撒拉族.html"><button id="t34" class="button"><span>撒拉族</span></button></a> 
+    <a href="毛南族.html"><button id="t35" class="button"><span>毛南族</span></button></a> 
+   
+    <a href="仡佬族.html"><button id="t36" class="button"><span>仡佬族</span></button></a> 
+    <a href="锡伯族.html"><button id="t37" class="button"><span>锡伯族</span></button></a> 
+    <a href="阿昌族.html"><button id="t38" class="button"><span>阿昌族</span></button></a> 
+    <a href="普米族.html"><button id="t39" class="button"><span>普米族</span></button></a> 
+    <a href="塔吉克族.html"><button id="t40" class="button"><span>塔吉克族</span></button></a> 
+ 
+    <a href="怒族.html"><button id="t41" class="button"><span>怒族</span></button></a>
+    <a href="乌孜别克族.html"><button id="t42" class="button"><span>乌孜别克族</span></button></a> 
+    <a href="俄罗斯族.html"><button id="t43" class="button"><span>俄罗斯族</span></button></a> 
+    <a href="鄂温克族.html"><button id="t44" class="button"><span>鄂温克族</span></button></a> 
+    <a href="德昂族.html"><button id="t45" class="button"><span>德昂族</span></button></a>  
+  
+    <a href="保安族.html"><button id="t46" class="button"><span>保安族</span></button></a> 
+    <a href="裕固族.html"><button id="t47" class="button"><span>裕固族</span></button></a> 
+    <a href="京族.html"><button id="t48" class="button"><span>京族</span></button></a> 
+    <a href="塔塔尔族.html"><button id="t49" class="button"><span>塔塔尔族</span></button></a> 
+    <a href="独龙族.html"><button id="t50" class="button"><span>独龙族</span></button></a> 
+    
+    <a href="鄂伦春族.html"><button id="t51" class="button"><span>鄂伦春族</span></button></a> 
+    <a href="赫哲族.html"><button id="t52" class="button"><span>赫哲族</span></button></a> 
+    <a href="门巴族.html"><button id="t53" class="button"><span>门巴族</span></button></a> 
+    <a href="珞巴族.html"><button id="t54" class="button"><span>珞巴族</span></button></a> 
+    <a href="基诺族.html"><button id="t55" class="button"><span>基诺族</span></button></a> 
+    
+    <a href="汉族.html"><button id="t56" class="button"><span>汉族</span></button></a>  
+            
+       </div>             
+ 
+<div class="map-wrapper" id="div1">					
+  <div id="map-01" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  蒙古族分布:内蒙古自治区、黑龙江、吉林省、辽宁省、河北省、新疆维吾尔自治区、青海省、甘肃省、宁夏回族自治区等地。其他省份分布比较少。</p>    </div> </div>
+<!--蒙古族-->
+            
+<div class="map-wrapper" id="div2">					
+	 <div id="map-02" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  回族分布:宁夏回族自治区是其主要聚居区，全区拥有回族人口186.25万，占全国回族总人口的18.9%。另外，回族人口在20万以上的地区还有：北京、河北、内蒙古、辽宁、安徽、山东、河南、云南、甘肃和新疆等。以东、中、西三大地区来看，回族人口在西部地区最多，占其总数的60.75%。其次是东部地区，中部地区最少。从南北来看，回族主要分布在黄河流域的北方各省区，南方分布的回族人口较少。</p>    </div>   </div>  
+<!--回族-->	
+    
+<div class="map-wrapper" id="div3">					
+	 <div id="map-03" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  藏族分布:中国境内主要分布在西藏自治区、青海省和四川省西部，云南迪庆、甘肃甘南等地区，此外印度、不丹、美国、加拿大、欧洲、澳洲等地区也有藏族分布。</p>    </div>   </div>  
+<!--藏族-->	 
+
+   
+<div class="map-wrapper" id="div4">					
+	 <div id="map-04" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  维吾尔族分布:主要聚居在新疆维吾尔自治区，主要分布于天山以南，塔里木盆地周围的绿洲是维吾尔族的聚居中心，其中尤以喀什噶尔绿洲、和田绿洲以及阿克苏河和塔里木河流域最为集中。天山东端的吐鲁番盆地，也是维吾尔族较为集中的区域。天山以北的伊犁谷地和吉木萨尔、奇台一带，有为数不多的维吾尔族定居。此外，在湖南省桃源县和河南省渑池县，也有少量维吾尔族分布。</p>    </div>   </div>  
+<!--维吾尔族-->	 
+
+<div class="map-wrapper" id="div5">					
+	 <div id="map-05" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  苗族分布：苗族主要分布在湖南、湖北、贵州、四川、云南、广西、海南等七个省区。其中，贵州最多。从中国苗族的分布情况看，其特点是大散居，小聚居。从人数上看，聚居的人多，散居的人少。</p>    </div>   </div>  
+<!--苗族-->	 
+
+<div class="map-wrapper" id="div6">					
+	 <div id="map-06" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  彝族分布：彝族主要分布在云南、四川、贵州、广西的高原与沿海丘陵之间，主要聚集在楚雄、红河、凉山、毕节、六盘水和安顺等地，凉山彝族自治州是全国最大的彝族聚居区。</p>    </div>   </div>  
+<!--彝族-->	 
+  
+<div class="map-wrapper" id="div7">					
+	 <div id="map-07" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  壮族分布：在全国的31个省、自治区、直辖市中均有壮族分布，主要聚居在南方，范围东起广东省连山壮族瑶族自治县，西至云南省文山壮族苗族自治州，北达贵州省黔东南苗族侗族自治州从江县，南抵北部湾。广西壮族自治区是壮族的主要分布区。</p>    </div>   </div>  
+<!--壮族-->	 
+   
+<div class="map-wrapper" id="div8">					
+	 <div id="map-08" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  布依族分布：布依族主要分布在贵州、云南、四川等省，其中以贵州省的布依族人口最多，占全国布依族人口的97%。主要聚居在黔南和黔西南两个布依族苗族自治州，以及安顺市、贵阳市、六盘水市，其余各市、州、地均有散居，一小部分居住在越南。</p>    </div>   </div>  
+<!--布依族-->	 
+    
+<div class="map-wrapper" id="div9">					
+	 <div id="map-09" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  朝鲜族分布：主要分布在吉林、黑龙江、辽宁东北三省，集中居住于图们江、鸭绿江、牡丹江、松花江及辽河、浑河等流域。其中，吉林省朝鲜族人口为114.5万人，黑龙江省为38.8万人，辽宁省为24.1万人。此外，还有14.8万多朝鲜族散杂居于北京、山东、内蒙古、河北、天津等地。</p>    </div>   </div>  
+<!--朝鲜族-->	 
+ 
+<div class="map-wrapper" id="div10">					
+	 <div id="map-10" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  满族分布：满族人口分布于全国各地，以辽宁、河北、黑龙江、吉林和内蒙古自治区、北京等省、自治区、直辖市为多，其他散居于新疆、甘肃、宁夏、山东、湖北、贵州等省区及西安、成都、广州、福州等大中城市。</p>    </div>   </div>  
+<!--满族-->	   
+ 
+<div class="map-wrapper" id="div11">					
+	 <div id="map-11" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  侗族分布：满族人口分布于全国各地，以辽宁、河北、黑龙江、吉林和内蒙古自治区、北京等省、自治区、直辖市为多，其他散居于新疆、甘肃、宁夏、山东、湖北、贵州等省区及西安、成都、广州、福州等大中城市。</p>    </div>   </div>  
+<!--侗族-->	   
+ 
+<div class="map-wrapper" id="div12">					
+	 <div id="map-12" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  瑶族分布：瑶族广泛分布在亚、欧、美、澳等各大洲，民族主体在中国，分布在广西、湖南、广东、云南、贵州和江西五省（区）的130多个县里，其中以广西为最多。</p>    </div>   </div>  
+<!--瑶族-->	   
+
+<div class="map-wrapper" id="div13">					
+	 <div id="map-13" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  白族分布：白族是中国第15大少数民族，主要分布在云南、贵州、湖南等省，其中以云南省的白族人口最多，主要聚居在云南省大理白族自治州。此外四川省、重庆市等地也有分布。</p>    </div>   </div>  
+<!--白族-->	   
+
+<div class="map-wrapper" id="div14">					
+	 <div id="map-14" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  土家族分布：土家族主要分布在湖南、湖北、重庆、贵州 交界地带的武陵山区。</p>    </div>   </div>  
+<!--土家族-->	   
+
+<div class="map-wrapper" id="div15">					
+	 <div id="map-15" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  哈尼族分布：哈尼族主要分布于中国云南元江和澜沧江之间，聚居于红河、江城、墨江及新平、镇沅等县，和泰国、缅甸、老挝、越南的北部山区。</p>    </div>   </div>  
+<!--哈尼族-->	   
+
+<div class="map-wrapper" id="div16">					
+	 <div id="map-16" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+	<p>  哈萨克族分布：我国的哈萨克族主要分布于新疆伊犁哈萨克自治州、木垒哈萨克自治县和巴里坤哈萨克自治县。少数分布于甘肃省阿克赛哈萨克自治县和青海省海西蒙古族哈萨克族自治州。</p>    </div>   </div>  
+<!--哈萨克族-->	
+
+<div class="map-wrapper" id="div17">					
+	 <div id="map-17" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  傣族分布：傣族分布在中国、印度、越南、柬埔寨、泰国等国家。主要聚居在云南省西双版纳傣族自治州、德宏傣族景颇族自治州以及耿马和孟连两个自治县。其余的散居在景东、景谷、普洱、澜沧、新平、元江、金平等30多个县。</p>    </div>   </div>  
+<!--傣族-->	
+
+<div class="map-wrapper" id="div18">					
+	 <div id="map-18" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  黎族分布：黎族主要聚居在海南省的陵水、保亭、三亚、乐东、东方、昌江、白沙、琼中、五指山等县市，其余散居在海南省境内的万宁、儋州、屯昌、琼海等县市以及贵州等省。</p>    </div>   </div>  
+<!--黎族-->	
+
+<div class="map-wrapper" id="div19">					
+	 <div id="map-19" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  傈僳族分布：傈僳族源于古老的氐羌族系，与彝族有着渊源关系，主要分布怒江、恩梅开江（伊洛瓦底江支流）流域地区，也就是中国云南、西藏与缅甸克钦交界地区，其余散居于中国云南其他地区、印度东北地区、泰国与缅甸交界地区。</p>    </div>   </div>  
+<!--傈僳族-->	
+
+<div class="map-wrapper" id="div20">					
+	 <div id="map-20" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  佤族分布：佤族主要居住在中国云南省西南部的沧源、西盟、孟连、耿马、澜沧、双江、镇康、永德等县和缅甸的佤邦、掸邦等地，中国境内还有一部分佤族散居在保山市、西双版纳傣族自治州、昆明市和德宏傣族景颇族自治州等地。</p>    </div>   </div>  
+<!--佤族-->	
+
+<div class="map-wrapper" id="div21">					
+	 <div id="map-21" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  畲族分布：分布在闽、浙、赣、粤、黔、皖、湘七省80多个县（市）内的部分山区，其中90%以上居住在福建、浙江广大山区。</p>    </div>   </div>  
+<!--畲族-->	
+
+<div class="map-wrapper" id="div22">					
+	 <div id="map-22" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  高山族分布：高山族主要居住在中国台湾省，也有少数散居在福建、浙江省等沿海地区。高山族聚居地区主要在台湾中部山区、东部纵谷平原和兰屿岛上。 [1] </p>    </div>   </div>  
+<!--高山族-->	
+
+<div class="map-wrapper" id="div23">					
+	 <div id="map-23" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  拉祜族分布：拉祜族分布在中国、缅甸、泰国、越南、老挝等国家，中国境内的拉祜族在31个省、自治区、直辖市中均有分布，主要分布在澜沧江西岸，北起临沧、耿马，南至澜沧、孟连等县。</p>    </div>   </div>  
+<!--拉祜族-->	
+
+<div class="map-wrapper" id="div24">					
+	 <div id="map-24" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  水族分布：水族主聚居在黔桂交界的龙江、都柳江上游地带，贵州省黔南的三都水族自治县、荔波、独山、都匀等县市为主要居住区，黔东南的榕江、丹寨、雷山、从江、黎平等县为主要散居区，此外在广西北部的河池、南丹、环江、融水等县市以及云南省富源县也有水族村落分布。</p>    </div>   </div>  
+<!--水族-->	
+
+<div class="map-wrapper" id="div25">					
+	 <div id="map-25" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  东乡族分布：东乡族主要聚居在甘肃省临夏回族自治州境内洮河以西、大夏河以东和黄河以南的山麓地带，其余分别聚居在和政县、临夏县和积石山保安族东乡族撒拉族自治县，在甘肃的兰州市、定西地区和甘南藏族自治州等地，还散居着一小部分东乡族。新中国成立后，部分东乡族从甘肃迁徙到新疆居住。</p>    </div>   </div>  
+<!--东乡族-->	
+
+<div class="map-wrapper" id="div26">					
+	 <div id="map-26" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  纳西族分布：为云南特有民族之一，绝大部分居住在滇西北的丽江市，其余分布在云南其他县市和四川盐源、盐边、木里等县，也有少数分布在西藏芒康县。</p>    </div>   </div>  
+<!--纳西族-->	
+
+<div class="map-wrapper" id="div27">					
+	 <div id="map-27" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  景颇族分布：主要聚居在云南省德宏傣族景颇族自治州山区，少数居住在怒江傈僳族自治州与缅甸克钦邦接壤地区。缅甸境内的大部分克钦族支系与中国境内的景颇族、傈僳族也有极深的渊源。</p>    </div>   </div>  
+<!--景颇族-->	
+
+<div class="map-wrapper" id="div28">					
+	 <div id="map-28" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  柯尔克孜族分布：柯尔克孜族主要分布在吉尔吉斯斯坦以及中国新疆维吾尔自治区等地，在黑龙江省富裕县五家子屯也有数百人聚居，是18世纪从新疆迁去的。</p>    </div>   </div>  
+<!--柯尔克孜族-->	
+
+<div class="map-wrapper" id="div29">					
+	 <div id="map-29" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  土族分布：土族主要聚居在青海互助土族自治县。青海的民和、大通两县和甘肃的天祝藏族自治县也比较集中，其余的则散居在青海的乐都、门源、都兰、乌兰、贵德、共和、西宁和甘肃的卓尼、永登、肃南等地。</p>    </div>   </div>  
+<!--土族-->	
+
+<div class="map-wrapper" id="div30">					
+	 <div id="map-30" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  达斡尔族分布：主要分布于内蒙古自治区莫力达瓦达斡尔族自治旗、黑龙江省齐齐哈尔市梅里斯达斡尔族区、鄂温克族自治旗一带；少数居住在新疆塔城、辽宁省等地。</p>    </div>   </div>  
+<!--达斡尔族-->	
+
+<div class="map-wrapper" id="div31">					
+	 <div id="map-31" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  仫佬族分布：仫佬族主要分布在广西壮族自治区，贵州省也有分布。在广西壮族自治区，多数聚居在罗城仫佬族自治县的东门、四把、黄金、龙岸、天河、小长安等地。少数散居在忻城、宜山、柳城、都安、环江、河池、融水、融安等县。在贵州省，主要居住在麻江、凯里、黄平、都匀、福泉等县。</p>    </div>   </div>  
+<!--仫佬族-->	
+
+<div class="map-wrapper" id="div32">					
+	 <div id="map-32" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  羌族分布：主要分布在四川省阿坝藏族羌族自治州的茂县、汶川、理县、松潘、黑水等县以及绵阳市的北川羌族自治县，其余散居于四川省甘孜藏族自治州的丹巴县、绵阳市的平武县以及贵州省铜仁地区的江口县和石阡县。大多数羌族聚居于高山或半山地带，少数分布在公路沿线各城镇附近，与藏、汉、回等族人民杂居。</p>    </div>   </div>  
+<!--羌族-->	
+
+<div class="map-wrapper" id="div33">					
+	 <div id="map-33" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p> 布朗族分布：主要分布在云南省西部及西南部沿边地区。
+其中，约有3万多人较为集中的聚居于西双版纳傣族自治州勐海县的布朗山、西定、巴达、打洛、勐满、勐岗等乡镇，约有5万多人散居于双江、保山、施甸、昌宁、云县、镇康、永德、耿马、澜沧、墨江等市县，布朗山布朗族乡是布朗族最大的聚居区，约占布朗族总人口的65%。此外，南涧、景东、景谷、思茅、景洪、勐腊等市县的山区亦有少量分布。</p>    </div>   </div>  
+<!--布朗族-->	
+
+<div class="map-wrapper" id="div34">					
+	 <div id="map-34" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  撒拉族分布：主要聚居在青海省循化撒拉族自治县、化隆回族自治县甘都乡、甘肃省积石山保安族东乡族撒拉族自治县的大河家。</p>    </div>   </div>  
+<!--撒拉族-->	
+
+<div class="map-wrapper" id="div35">					
+	 <div id="map-35" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  毛南族分布：毛南族主要聚居在广西环江县的上南、中南、下南山区，贵州平塘县、独山县交界的卡蒲河、六硐河河谷地带等地，其余散居在环江县内的水源、木论、川山、洛阳、思恩等乡镇，以及周围的河池、南丹、宜山、都安和贵州的惠水等县（市）。</p>    </div>   </div>  
+<!--毛南族-->	
+
+<div class="map-wrapper" id="div36">					
+	 <div id="map-36" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  仡佬族分布：仡佬族集中聚居在贵州省北部的务川和道真两个仡佬族苗族自治县和石阡县，其余分别散居在安顺、平坝、普定、关岭、清镇、正安、凤岗、松桃、黔西、六枝、织金、大方等二十多个县市。</p>    </div>   </div>  
+<!--仡佬族-->	
+
+<div class="map-wrapper" id="div37">					
+	 <div id="map-37" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  锡伯族分布：今锡伯族多数居住在辽宁省（70.2%）和新疆察布查尔锡伯自治县和霍城、巩留等县，在东北的沈阳、东港、开原、义县、北镇、新民、凤城、扶余、内蒙东部以及黑龙江省的嫩江流域有散居。</p>    </div>   </div>  
+<!--锡伯族-->	
+
+<div class="map-wrapper" id="div38">					
+	 <div id="map-38" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  阿昌族分布：阿昌族主要分布于云南省德宏傣族景颇族自治州陇川县户撒阿昌族乡、梁河县囊宋阿昌族乡、九保阿昌族乡，其余分布于潞西、盈江、腾冲、龙陵、云龙等县。此外，在邻国缅甸也有部分阿昌族分布。</p>    </div>   </div>  
+<!--阿昌族-->	
+
+<div class="map-wrapper" id="div39">					
+	 <div id="map-39" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  普米族分布：云南省怒江州的兰坪县、丽江市的宁蒗县、玉龙县和迪庆州的维西县是主要聚居地。其余分布在云县、凤庆、中甸以及四川省的木里、盐源、九龙等县。</p>    </div>   </div>  
+<!--普米族-->	
+
+<div class="map-wrapper" id="div40">					
+	 <div id="map-40" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  塔吉克族分布：塔吉克族主体在中亚，主要分布在塔吉克斯坦、乌兹别克斯坦等国和地区，中国境内的塔吉克族主要聚居于新疆塔什库尔干塔吉克自治县。</p>    </div>   </div>  
+<!--塔吉克族-->	
+
+<div class="map-wrapper" id="div41">					
+	 <div id="map-41" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  怒族分布：怒族是中国人口较少、使用语种较多的民族之一，云南省怒江傈僳族自治州的泸水（原碧江县） 、福贡、贡山独龙族怒族自治县、兰坪白族普米族自治县，以及迪庆藏族自治州的维西县和西藏自治区的察隅县等地。</p>    </div>   </div>  
+<!--怒族-->	
+
+<div class="map-wrapper" id="div42">					
+	 <div id="map-42" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  乌孜别克族分布：乌孜别克族主体在中亚，主要生活在乌兹别克斯坦、哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦、伊朗、阿富汗等国家，中国境内的乌孜别克族散居在新疆维吾尔自治区许多县、市，其中大部分居住在城镇，少数在农村。</p>    </div>   </div>  
+<!--乌孜别克族-->	
+
+<div class="map-wrapper" id="div43">					
+	 <div id="map-43" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  俄罗斯族分布：俄罗斯族散居在新疆、内蒙古、黑龙江、北京等地，主要集中聚居在新疆维吾尔自治区西北部、黑龙江北部和内蒙古自治区东北部的呼伦贝尔市下辖额尔古纳市等地。</p>    </div>   </div>  
+<!--俄罗斯族-->	
+
+<div class="map-wrapper" id="div44">					
+	 <div id="map-44" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  鄂温克族分布：是东北亚地区的一个民族，主要居住于俄罗斯西伯利亚以及中国内蒙古和黑龙江两省区，蒙古国也有少量分布。在俄国被称为埃文基人。</p>    </div>   </div>  
+<!--鄂温克族-->	
+
+<div class="map-wrapper" id="div45">					
+	 <div id="map-45" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  德昂族分布：德昂族主要居住中华人民共和国与缅甸联邦共和国交界地区，是一个典型的大分散小聚居的民族，分布范围非常广，中国一侧在主要分布在云南省德宏、保山、临沧等3个地州9个县市，缅甸一侧在掸邦、克钦邦等地。</p>    </div>   </div>  
+<!--德昂族-->	
+
+<div class="map-wrapper" id="div46">					
+	 <div id="map-46" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  保安族分布：保安系本族自称。保安族聚居的大河家地方，散居在临夏回族自治州其它各县和兰州市以及青海、新疆等地。</p>    </div>   </div>  
+<!--保安族-->	
+
+<div class="map-wrapper" id="div47">					
+	 <div id="map-47" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  裕固族分布：裕固族是以畜牧业为主的民族，主要聚居在甘肃省肃南裕固族自治县和酒泉黄泥堡地区。</p>    </div>   </div>  
+<!--裕固族-->	
+
+<div class="map-wrapper" id="div48">					
+	 <div id="map-48" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  京族分布：京族主体在东南亚，中国境内的京族主要分布在广西壮族自治区防城港市，主要聚居在东兴市江平镇的澫尾、山心、巫头三个海岛上，三岛素有“京族三岛”之称。</p>    </div>   </div>  
+<!--京族-->	
+
+<div class="map-wrapper" id="div49">					
+	 <div id="map-49" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  塔塔尔族分布：在中国，塔塔尔族主要散居在新疆维吾尔自治区境内天山北部地区，以伊犁哈萨克自治州、昌吉回族自治州、乌鲁木齐市等地区人数较多，比较集中分布在乌鲁木齐、伊宁、塔城、奇台、吉木萨尔、阿勒泰、昌吉等地。</p>    </div>   </div>  
+<!--塔塔尔族-->	
+
+<div class="map-wrapper" id="div50">					
+	 <div id="map-50" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  独龙族分布：独龙族主要分布在云南省西北部怒江傈僳族自治州的贡山独龙族怒族自治县西部的独龙江峡谷两岸、北部的怒江两岸，以及相邻的维西傈僳族自治县齐乐乡和西藏自治区察隅县察瓦洛等地。缅甸境内也有不少独龙人居住。</p>    </div>   </div>  
+<!--独龙族-->	
+
+<div class="map-wrapper" id="div51">					
+	 <div id="map-51" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  鄂伦春族分布：鄂伦春族主要分布在内蒙古自治区呼伦贝尔盟鄂伦春自治旗、布特哈旗、莫力达瓦达斡尔族自治旗和黑龙江省北部的呼玛、逊克、爱辉、嘉荫等县。黑龙江省有鄂伦春族3871人，占鄂伦春族总人口的47%；内蒙古自治区有3573人，占44%。</p>    </div>   </div>  
+<!--鄂伦春族-->	
+
+<div class="map-wrapper" id="div52">					
+	 <div id="map-52" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  赫哲族分布：赫哲族主要分布于黑龙江、松花江、乌苏里江交汇构成的三江平原和完达山余脉，集中居住于三乡两村，即同江市街津口赫哲族乡、八岔赫哲族乡、双鸭山市饶河县四排赫哲族乡和佳木斯市敖其镇敖其赫哲族村、抚远县抓吉镇抓吉赫哲族村。</p>    </div>   </div>  
+<!--赫哲族-->	
+
+<div class="map-wrapper" id="div53">					
+	 <div id="map-53" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  门巴族分布：门巴族主要分布在西藏自治区东南部的门隅和墨脱地区，错那县的勒布是门巴族的主要聚居区，门巴族和藏族长期友好往来，互通婚姻，在政治、经济、文化、宗教信仰、生活习俗等方面都有十分密切的关系。</p>    </div>   </div>  
+<!--门巴族-->	
+
+<div class="map-wrapper" id="div54">					
+	 <div id="map-54" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+		<p>  珞巴族分布：珞巴族主要分布在西藏东起察隅，西至门隅之间的珞渝地区，主要从事农业和狩猎。</p>    </div>   </div>  
+<!--珞巴族-->	
+
+<div class="map-wrapper" id="div55">					
+	 <div id="map-55" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+	<p>  基诺族分布：基诺族主要聚居于云南省西双版纳傣族自治州景洪市基诺山基诺族民族乡及四邻的勐旺、勐养、勐罕，勐腊县的勐仑、象明也有少量基诺族散居。</p>    </div>   </div>  
+<!--基诺族-->	
+
+<div class="map-wrapper" id="div56">					
+	 <div id="map-56" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+  <p>汉族经历与中国境内各民族长达数千年的共处、迁徙，于是形成了在松辽平原及黄河、淮河、长江、珠江等大河巨川流域农业最发达的地区及城市集中分布，在边疆与当地各民族交错杂居的分布特点。 在长期的历史发展过程中，汉族有相当数量人口移居海外。其中有的在移居国生根发展，成为当地的华裔，有的则保持中国国籍，成为散布在世界各地的华侨。</p> </div>  </div> 
+<!--汉族-->	
+
+<div class="map-wrapper" id="div57">					
+	 <div id="map-57" class="map-box"></div>
+     <div style="alignment-adjust: middle; position: absolute; left: 24px; top: 381px; width: 285px; height: 199px;">
+  </div>   </div>  
+<!--空地图-->	
+
+    <br><br>
+		
+
+		
+</body>
+</html>

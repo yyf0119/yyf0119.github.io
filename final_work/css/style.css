@@ -1,0 +1,174 @@
+ul,ol,li{
+	list-style: none;
+}
+button{
+	border:none;
+}
+#my-slide{
+	width:100%;
+	height:380px;
+}
+
+#my-slide .slide-list{
+	max-width: 1300px;
+	width: 60%;
+	height: 380px;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+}
+
+#my-slide .slide-list li{
+	margin-right:20px;
+	height:380px;
+	position: absolute;
+	top:0;
+	overflow: hidden;
+	width:calc(100% - 20px - 50%);
+	max-width: 660px;
+}
+
+#my-slide .slide-list li img{
+	height:380px;
+	width:660px;
+}
+
+/**顶部幻灯片按钮**/
+.slick-top-prev{
+	position:absolute;
+	display: block;
+	height: 94px;
+	width:56px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	top: 50%;
+	left: 0px;
+	margin-top:-47px;
+}
+
+.slick-arrow{
+	background-color: #fff;
+	font-family: monospace;
+	font-weight: 100;
+	font-size: 50px;
+	color: #333;
+	outline: none;
+	z-index: 1;
+	opacity: .95;
+}
+
+.slick-top-prev:before{
+	content: "<";
+	font-weight: bold;
+}
+
+.slick-top-next{
+	position:absolute;
+	display: block;
+	height: 94px;
+	width:56px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	top: 50%;
+	right: 0px;
+	margin-top:-47px;
+}
+
+.slick-top-next:before{
+	content: ">";
+	font-weight: bold;
+}
+  .container {
+	position: absolute;
+	top: 57px;
+	left: 143px;
+	width: 600px;
+	height: 380px;
+            }
+            .box, .box img {
+	position: absolute;
+	height: 390px;
+	width: 600px;
+	left: 1px;
+	top: -5px;
+            }
+            .circle {
+                width: 200px;
+                height: 14px;
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                margin-left: -100px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .circle b {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-color: #000;
+                border-radius: 50%;
+                margin: 3px;
+            }
+            .circle .current {
+                background-color: #fff;
+            }
+            .btn {
+                position: absolute;
+                top: 50%;
+                width: 40px;
+                height: 50px;
+                margin-top: -25px;
+                background-color: rgba(255, 255, 255, .7);
+                text-align: center;
+                line-height: 40px;
+                font-size: 50px;
+                cursor: pointer;
+            }
+            .left {
+                left: 0;
+            }
+            .right {
+                right: 0;
+            }
+body {
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-color: #CCCC99;
+	background-origin:border-box;
+	background-image:url(../images/10.jpg);
+	background-repeat:center top;
+	height:100%;
+    width:100%;
+    overflow:scroll;
+}
+
+.title{
+	letter-spacing: 15px;
+	position: absolute;
+	left: 977px;
+	top: 189px;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	width: 500px;
+	height: 116px;
+	font-size: 36px;
+	font: bold 65px helvetica, arial, sans-serif;
+	color: #000;        /*字体设为红色*/
+	text-shadow: 0 0 4px white,    /*第一层阴影为白色*/
+        0 -5px 4px #ff3,     /*第二层阴影为黄色*/
+        2px -10px 6px #fd3,     /*第三层阴影为浅橙色*/
+        -2px -15px 11px #CCCC33,     /*第四层阴影为深橙色*/
+        2px -25px 18px #CCCC66;    /*最后一层阴影为红色，扩散效果设置较明显*/
+	 
+}
+
+
+
+#main {
+	width: 1400px;
+	height: 600px;
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: auto;
+
+    }
+	  
