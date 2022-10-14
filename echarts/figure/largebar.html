@@ -1,0 +1,455 @@
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/simpleRequire.js"></script>
+        <script src="lib/config.js"></script>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/facePrint.js"></script>
+        <script src="lib/testHelper.js"></script>
+        <link rel="stylesheet" href="lib/reset.css" />
+    </head>
+    <body>
+        <style>
+            html, body, #main {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+            #main {
+                background: #fff;
+            }
+        </style>
+
+        <div id="main0"></div>
+        <div id="main1"></div>
+        <div id="main2"></div>
+
+        <script>
+
+            require([
+                'echarts'
+            ], function (echarts) {
+
+                var xAxisData = [];
+                var data1 = [];
+                var data2 = [];
+xAxisData.push('2014年1月');
+xAxisData.push('2014年2月');
+xAxisData.push('2014年3月');
+xAxisData.push('2014年4月');
+xAxisData.push('2014年5月');
+xAxisData.push('2014年6月');
+xAxisData.push('2014年7月');
+xAxisData.push('2014年8月');
+xAxisData.push('2014年9月');
+xAxisData.push('2014年10月');
+xAxisData.push('2014年11月');
+xAxisData.push('2014年12月');
+xAxisData.push('2015年1月');
+xAxisData.push('2015年2月');
+xAxisData.push('2015年3月');
+xAxisData.push('2015年4月');
+xAxisData.push('2015年5月');
+xAxisData.push('2015年6月');
+xAxisData.push('2015年7月');
+xAxisData.push('2015年8月');
+xAxisData.push('2015年9月');
+xAxisData.push('2015年10月');
+xAxisData.push('2015年11月');
+xAxisData.push('2015年12月');
+xAxisData.push('2016年1月');
+xAxisData.push('2016年2月');
+xAxisData.push('2016年3月');
+xAxisData.push('2016年4月');
+xAxisData.push('2016年5月');
+xAxisData.push('2016年6月');
+xAxisData.push('2016年7月');
+xAxisData.push('2016年8月');
+xAxisData.push('2016年9月');
+xAxisData.push('2016年10月');
+xAxisData.push('2016年11月');
+xAxisData.push('2016年12月');
+xAxisData.push('2017年1月');
+xAxisData.push('2017年2月');
+xAxisData.push('2017年3月');
+xAxisData.push('2017年4月');
+xAxisData.push('2017年5月');
+xAxisData.push('2017年6月');
+xAxisData.push('2017年7月');
+xAxisData.push('2017年8月');
+xAxisData.push('2017年9月');
+xAxisData.push('2017年10月');
+xAxisData.push('2017年11月');
+xAxisData.push('2017年12月');
+xAxisData.push('2018年1月');
+xAxisData.push('2018年2月');
+xAxisData.push('2018年3月');
+xAxisData.push('2018年4月');
+xAxisData.push('2018年5月');
+xAxisData.push('2018年6月');
+xAxisData.push('2018年7月');
+xAxisData.push('2018年8月');
+xAxisData.push('2018年9月');
+xAxisData.push('2018年10月');
+xAxisData.push('2018年11月');
+xAxisData.push('2018年12月');
+xAxisData.push('2019年1月');
+xAxisData.push('2019年2月');
+xAxisData.push('2019年3月');
+xAxisData.push('2019年4月');
+xAxisData.push('2019年5月');
+xAxisData.push('2019年6月');
+xAxisData.push('2019年7月');
+xAxisData.push('2019年8月');
+xAxisData.push('2019年9月');
+xAxisData.push('2019年10月');
+xAxisData.push('2019年11月');
+xAxisData.push('2019年12月');
+xAxisData.push('2020年1月~2月');
+xAxisData.push('2020年3月');
+xAxisData.push('2020年4月');
+xAxisData.push('2020年5月');
+xAxisData.push('2020年6月');
+xAxisData.push('2020年7月');
+xAxisData.push('2020年8月');
+xAxisData.push('2020年9月');
+xAxisData.push('2020年10月');
+xAxisData.push('2020年11月');
+xAxisData.push('2020年12月');
+xAxisData.push('2021年1月~2月');
+xAxisData.push('2021年3月');
+xAxisData.push('2021年4月');
+xAxisData.push('2021年5月');
+xAxisData.push('2021年6月');
+xAxisData.push('2021年7月');
+xAxisData.push('2021年8月');
+xAxisData.push('2021年9月');
+xAxisData.push('2021年10月');
+xAxisData.push('2021年11月');
+xAxisData.push('2021年12月');
+xAxisData.push('2022年1月~2月');
+xAxisData.push('2022年3月');
+xAxisData.push('2022年4月');
+xAxisData.push('2022年5月');
+xAxisData.push('2022年6月');
+xAxisData.push('2022年7月');
+xAxisData.push('2022年8月');
+data1.push(133.61);
+data1.push(87.67);
+data1.push(116.11);
+data1.push(125.29);
+data1.push(124.13);
+data1.push(119.47);
+data1.push(132.24);
+data1.push(128.29);
+data1.push(138.47);
+data1.push(128.65);
+data1.push(128.83);
+data1.push(141.64);
+data1.push(119.05);
+data1.push(97.03);
+data1.push(100.00);
+data1.push(111.42);
+data1.push(112.06);
+data1.push(116.77);
+data1.push(120.46);
+data1.push(116.32);
+data1.push(122.49);
+data1.push(113.00);
+data1.push(118.65);
+data1.push(135.24);
+data1.push(98.60);
+data1.push(75.28);
+data1.push(99.77);
+data1.push(102.65);
+data1.push(107.21);
+data1.push(107.66);
+data1.push(109.45);
+data1.push(114.55);
+data1.push(114.16);
+data1.push(106.84);
+data1.push(120.31);
+data1.push(132.39);
+data1.push(109.06);
+data1.push(86.95);
+data1.push(117.43);
+data1.push(111.56);
+data1.push(118.29);
+data1.push(121.80);
+data1.push(118.69);
+data1.push(124.51);
+data1.push(128.87);
+data1.push(118.52);
+data1.push(137.52);
+data1.push(143.11);
+data1.push(133.11);
+data1.push(108.06);
+data1.push(123.65);
+data1.push(129.97);
+data1.push(139.81);
+data1.push(136.50);
+data1.push(140.37);
+data1.push(142.58);
+data1.push(147.06);
+data1.push(138.66);
+data1.push(142.26);
+data1.push(134.66);
+data1.push(138.48);
+data1.push(93.15);
+data1.push(127.54);
+data1.push(130.49);
+data1.push(135.00);
+data1.push(131.03);
+data1.push(139.19);
+data1.push(138.05);
+data1.push(138.69);
+data1.push(133.96);
+data1.push(141.55);
+data1.push(149.85);
+data1.push(103.51);
+data1.push(122.54);
+data1.push(124.21);
+data1.push(122.64);
+data1.push(133.14);
+data1.push(144.41);
+data1.push(143.94);
+data1.push(154.75);
+data1.push(145.45);
+data1.push(161.13);
+data1.push(169.85);
+data1.push(145.91);
+data1.push(163.83);
+data1.push(169.60);
+data1.push(168.67);
+data1.push(178.81);
+data1.push(177.91);
+data1.push(185.45);
+data1.push(190.49);
+data1.push(180.42);
+data1.push(202.60);
+data1.push(205.12);
+data1.push(170.21);
+data1.push(176.53);
+data1.push(173.50);
+data1.push(188.05);
+data1.push(197.44);
+data1.push(197.47);
+data1.push(192.50);
+data2.push(143.54);
+data2.push(79.07);
+data2.push(117.87);
+data2.push(130.67);
+data2.push(135.62);
+data2.push(129.49);
+data2.push(147.51);
+data2.push(144.45);
+data2.push(148.08);
+data2.push(143.36);
+data2.push(146.69);
+data2.push(157.69);
+data2.push(138.58);
+data2.push(117.14);
+data2.push(100.00);
+data2.push(121.96);
+data2.push(130.90);
+data2.push(131.41);
+data2.push(133.92);
+data2.push(136.00);
+data2.push(142.08);
+data2.push(133.25);
+data2.push(136.31);
+data2.push(154.70);
+data2.push(117.44);
+data2.push(84.38);
+data2.push(107.53);
+data2.push(115.57);
+data2.push(121.82);
+data2.push(122.44);
+data2.push(125.26);
+data2.push(130.92);
+data2.push(127.18);
+data2.push(122.60);
+data2.push(134.20);
+data2.push(144.97);
+data2.push(124.99);
+data2.push(82.40);
+data2.push(124.27);
+data2.push(123.25);
+data2.push(131.10);
+data2.push(135.03);
+data2.push(133.20);
+data2.push(137.31);
+data2.push(137.24);
+data2.push(130.28);
+data2.push(149.64);
+data2.push(160.53);
+data2.push(138.31);
+data2.push(118.31);
+data2.push(120.57);
+data2.push(137.93);
+data2.push(146.71 );
+data2.push(149.49);
+data2.push(148.65);
+data2.push(150.42);
+data2.push(156.28);
+data2.push(148.92);
+data2.push(155.52);
+data2.push(153.18);
+data2.push(150.84);
+data2.push(93.76);
+data2.push(137.74);
+data2.push(134.15);
+data2.push(148.26);
+data2.push(147.56);
+data2.push(153.59);
+data2.push(148.92);
+data2.push(151.23);
+data2.push(147.63);
+data2.push(153.46);
+data2.push(164.76);
+data2.push(101.38);
+data2.push(128.37);
+data2.push(138.85);
+data2.push(143.39);
+data2.push(148.07);
+data2.push(164.75);
+data2.push(163.11);
+data2.push(166.23);
+data2.push(164.44);
+data2.push(185.86);
+data2.push(195.46);
+data2.push(162.54);
+data2.push(167.18);
+data2.push(182.98);
+data2.push(182.98);
+data2.push(195.11);
+data2.push(195.97);
+data2.push(204.05);
+data2.push(211.97);
+data2.push(208.15);
+data2.push(225.69);
+data2.push(236.07);
+data2.push(188.82);
+data2.push(191.41);
+data2.push(189.70);
+data2.push(213.71);
+data2.push(229.67);
+data2.push(230.85);
+data2.push(218.34);
+
+
+
+
+
+                var data = [["4.70","4.69","2.48","0.77","3.08","4.57","2.68","3.35","0.37","1.86","2.68","0.64","1.82","1.88","0.31","0.45","4.48","3.08","1.58","2.98","1.87","0.96","3.43","2.58","0.41","2.69","0.59","3.47","4.33","1.75","0.51","1.01","1.60","3.62","2.29","2.40","1.52","2.30","0.18","3.99","0.26","2.92","2.94","0.54","2.98","3.71","2.24","0.32","1.98","2.56","1.81","4.67","2.49","1.73","1.79","2.79","3.39","1.83","3.24","3.76","1.23","1.69","3.55","2.66","1.83","3.69","2.70","0.75","0.71","1.44","3.23","1.49","1.50","3.61","4.41","1.26","2.93","2.84","4.11","0.80","2.67","2.59","2.71","4.85","1.28","1.21","4.32","4.04","1.15","4.38","4.41","4.94","4.13","0.86","1.97","3.58","3.02","1.29","1.47","3.75"],["0.78","0.90","0.54","0.75","0.68","0.68","0.84","0.87","0.78","0.79","0.77","0.34","0.81","0.80","0.28","0.87","0.98","0.92","0.66","0.87","0.88","0.56","0.34","0.67","0.60","0.00","0.22","0.87","0.81","0.69","0.41","0.02","0.18","0.55","0.48","0.90","0.62","0.17","0.37","0.35","0.31","0.78","0.34","0.56","0.22","0.87","0.55","0.94","0.58","0.66","0.33","0.73","0.78","0.44","0.79","0.12","0.81","0.77","0.33","0.30","0.86","0.87","0.09","0.91","0.90","0.34","0.76","0.93","0.55","0.41","0.63","0.96","0.80","0.41","0.53","0.53","0.66","0.24","0.24","0.99","0.92","0.85","0.44","0.92","0.28","0.61","0.20","0.74","0.52","0.91","0.42","0.08","0.00","0.57","0.81","0.39","0.41","0.72","0.02","0.20"],["1.17","0.65","0.98","1.08","1.02","1.41","1.01","1.17","0.63","0.94","0.78","1.43","0.67","1.09","1.29","0.60","0.50","1.38","0.76","0.94","0.79","1.44","0.55","1.48","1.13","0.63","1.07","0.57","1.43","0.81","0.87","0.70","1.04","1.43","1.00","0.50","0.54","0.57","0.97","0.58","1.19","0.73","0.76","0.75","1.39","0.93","0.60","1.28","1.14","1.18","0.60","0.59","1.46","0.64","1.44","0.59","1.49","0.84","0.71","1.44","1.11","1.18","1.40","0.64","1.15","1.07","1.35","0.86","1.13","1.41","1.03","0.57","1.44","0.93","1.47","1.16","1.40","1.14","0.97","0.78","1.49","0.59","0.99","1.35","0.88","1.02","1.16","1.07","0.81","0.87","1.34","0.98","1.17","1.46","0.71","1.13","0.80","1.24","0.76","0.68"],["1.04","0.54","0.55","1.05","1.20","1.13","0.53","0.63","0.82","0.52","0.86","0.33","0.64","1.14","0.47","0.72","0.97","1.18","1.02","0.53","1.14","1.24","1.13","0.60","0.47","0.94","0.64","0.43","0.71","0.33","0.46","0.82","0.80","0.97","0.43","1.29","0.65","0.92","0.63","0.58","0.31","1.09","0.35","0.43","1.19","0.47","0.59","0.52","0.79","0.69","0.54","0.39","0.33","1.26","0.40","0.76","0.80","0.96","0.82","1.26","0.70","0.50","0.67","1.27","1.24","0.49","0.94","0.97","0.90","1.03","1.28","0.46","0.57","1.23","0.40","0.71","1.08","0.51","1.03","0.38","0.81","0.44","1.02","0.79","1.08","1.01","0.66","0.80","0.65","0.97","0.56","0.33","0.61","0.92","0.40","0.77","1.05","1.21","0.34","0.84"]];
+
+                var option = { 
+title:{
+text:'我国2014-2022年一带一路进出口贸易额'
+},
+                    legend: {
+                        data: ['进口额', '出口额'],
+                        align: 'left'
+                    },
+                    toolbox: {
+                        // y: 'bottom',
+                        feature: {
+                            magicType: {
+                                type: ['line', 'bar', 'stack', 'tiled']
+                            },
+                            dataZoom: {
+                                yAxisIndex: false
+                            },
+                            dataView: {},
+                            saveAsImage: {
+                                pixelRatio: 2
+                            }
+                        }
+                    },
+                    tooltip: {},
+                    dataZoom: [{
+                        startValue: 48,
+                        endValue: 99,
+                        type: 'inside'
+                    }, {
+                        startValue: 48,
+                        endValue: 99,
+                        type: 'slider'
+                    }],
+                    xAxis: {
+                        data: xAxisData,
+                        silent: false,
+                        splitLine: {
+                            show: false
+                        },
+                        splitArea: {
+                            show: false
+                        }
+                    },
+                    yAxis: {
+                        splitArea: {
+                            show: false
+                        }
+                    },
+                    series: [{
+                        name: '进口额',
+                        type: 'bar',
+                        stack: 'one',
+                        large: true,
+                        largeThreshold: 10,
+                        data: data1
+                    }, {
+                        show: false,
+                        name: '出口额',
+                        type: 'bar',
+                        stack: 'one',
+                        large: true,
+                        largeThreshold: 10,
+                        data: data2
+                    }],
+                    animationDelay: function (idx) {
+                        return idx * 5;
+                    },
+                    animationDelayUpdate: function (idx) {
+                        return idx * 5;
+                    }
+                }
+
+                var chart = testHelper.create(echarts, 'main0', {
+                    option: option,
+                });
+
+                chart.on('click', function (params) {
+                    console.log(params);
+                });
+            });
+        </script>
+
+
+
+
+
+      
+    </body>
+</html>
