@@ -38,7 +38,7 @@ under the License.
         <div id="main"></div>
         <script>
 
-           var data = [
+             var data = [
       
           
            ];
@@ -234,7 +234,6 @@ under the License.
                '武汉':[114.31,30.52],
                '大庆':[125.03,46.58]
            };
-
            var convertData = function (data) {
                var res = [];
                for (var i = 0; i < data.length; i++) {
@@ -268,7 +267,7 @@ under the License.
                 'map/js/china'
             ], function (echarts) {
                 var chart = echarts.init(document.getElementById('main'));
-
+             
                 chart.setOption({
                     aria: {
                         show: true
@@ -285,9 +284,9 @@ under the License.
                         left: 'left',
                         top: 'bottom',
                         text: ['High','Low'],
-                        seriesIndex: [1, 2, 3],
+                      
                         inRange: {
-                            color: ['#ff6100', 'f5dec3']
+                            color: ['#f5dec3','#ff5100' ]
                         },
                         calculable : true
                     },
@@ -317,6 +316,9 @@ under the License.
                             }
                         }
                     },
+   title: {
+    text: '2020年各省一带一路进出口总额（单位兆美元）'
+  },
                     series : [
                         {
                             name: 'pm2.5',
